@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePlus Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">CarePlus Hospital</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Your Health, Our Priority</h1>
+            <p>
+                Quality healthcare with experienced doctors
+                and modern medical facilities.
+            </p>
+
+            <button onclick="scrollToAppointment()">
+                Book Appointment
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency medical services for patients.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cardiology</h3>
+                <p>Complete heart care from experienced specialists.</p>
+            </div>
+
+            <div class="card">
+                <h3>Pharmacy</h3>
+                <p>Fully equipped pharmacy for your medical needs.</p>
+            </div>
+
+            <div class="card">
+                <h3>Laboratory</h3>
+                <p>Modern laboratory with accurate test results.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Doctors -->
+    <section class="section doctors" id="doctors">
+        <h2>Our Doctors</h2>
+
+        <div class="cards">
+
+            <div class="doctor-card">
+                <div class="doctor-image">👨‍⚕️</div>
+                <h3>Dr. John Smith</h3>
+                <p>Cardiologist</p>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doctor-image">👩‍⚕️</div>
+                <h3>Dr. Sarah Williams</h3>
+                <p>Pediatrician</p>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doctor-image">👨‍⚕️</div>
+                <h3>Dr. Michael Brown</h3>
+                <p>Neurologist</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Appointment -->
+    <section class="appointment" id="appointment">
+
+        <h2>Book an Appointment</h2>
+
+        <form id="appointmentForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+            >
+
+            <select id="department">
+                <option value="">Select Department</option>
+                <option>Cardiology</option>
+                <option>Pediatrics</option>
+                <option>Neurology</option>
+                <option>Emergency</option>
+            </select>
+
+            <input
+                type="date"
+                id="date"
+            >
+
+            <button type="submit">
+                Book Appointment
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Main Road, City Center</p>
+        <p>📞 +974 1234 5678</p>
+        <p>✉️ info@careplus.com</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CarePlus Hospital. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
